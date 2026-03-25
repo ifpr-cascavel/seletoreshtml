@@ -1,0 +1,51 @@
+/* 1. SELETOR DE TAG: Aplica o estilo a TODOS os elementos 'body' do HTML */
+body {
+    background-color: #f4f4f4; /* Define a cor de fundo (cinza claro em Hexadecimal) */
+    font-family: Arial, sans-serif; /* Define a fonte. Se o sistema não tiver Arial, usa qualquer sans-serif */
+}
+
+/* 2. SELETOR DE ID (#): Seleciona o elemento ÚNICO com id="topo-principal" */
+#topo-principal {
+    background-color: #333; /* Cor de fundo grafite escuro */
+    color: white;           /* Define a cor do TEXTO como branco */
+    padding: 20px;          /* Cria um espaçamento interno de 20px em todos os lados */
+}
+
+/* 3. SELETOR DE CLASSE (.): Seleciona todos os elementos que possuem class="card" */
+.card {
+    background-color: white;   /* Fundo branco para contrastar com o cinza do body */
+    border-radius: 10px;      /* Arredonda os cantos da "caixa" em 10 pixels */
+    width: 200px;             /* Define uma largura fixa de 200 pixels */
+    padding: 15px;            /* Espaço entre a borda do card e o conteúdo interno */
+    margin: 10px;             /* Espaço externo, empurrando outros cards para longe */
+    display: inline-block;    /* Alinha os blocos um ao lado do outro, mas permite definir largura/altura */
+}
+
+/* 4. SELETOR DESCENDENTE: Seleciona o 'span' APENAS se ele estiver dentro de um 'p' */
+p span {
+    font-weight: bold; /* Deixa o peso da fonte em negrito */
+    color: blue;       /* Altera a cor do texto para azul */
+}
+
+/* 5. SELETOR DE AGRUPAMENTO: Aplica as mesmas regras para h1 E h2 ao mesmo tempo */
+h1, h2 {
+    color: #2c3e50; /* Define uma cor azul marinho escuro para ambos os títulos */
+}
+
+/* 6. SELETOR DE CLASSE ESPECÍFICA: Seleciona o elemento que tem AMBAS as classes */
+.card.destaque {
+    border: 3px solid gold; /* Adiciona uma borda de 3px, do tipo sólida e na cor dourada */
+    transform: scale(1.05); /* Aumenta o tamanho do elemento em 5% (efeito de zoom) */
+}
+
+/* 7. PSEUDO-CLASSE :HOVER: Aplica o estilo quando o mouse "paira" sobre o elemento */
+button:hover {
+    background-color: #27ae60; /* Muda a cor de fundo para um verde vibrante */
+    color: white;              /* Muda o texto do botão para branco no hover */
+    cursor: pointer;           /* Transforma a seta do mouse na "mãozinha" de clique */
+}
+
+/* 8. PSEUDO-CLASSE :NTH-CHILD: Seleciona o filho baseado na sua posição numérica */
+nav ul li:nth-child(2) {
+    text-transform: uppercase; /* Transforma o texto do segundo item da lista em MAIÚSCULO */
+}
